@@ -2,9 +2,9 @@ const express = require('express');
 const port = 3000;
 const app = express();
 const path = require('path');
-app.use(express.static('dist/public'));
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'dist'));
+app.set('views', path.join(__dirname, 'views'));
 
 
 app.get('/', (req, res) => {
