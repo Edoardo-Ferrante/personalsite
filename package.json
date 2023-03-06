@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "devStart": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,14 @@
   "homepage": "https://github.com/Edoardo-Ferrante/personalsite#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "nodemailer": "^6.9.1",
-    "nodemon": "^2.0.21",
+    "express-static": "^1.2.6",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.28.3",
+    "nodemon": "^2.0.21"
   }
 }

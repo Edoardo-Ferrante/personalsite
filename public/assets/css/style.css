@@ -1227,3 +1227,30 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+nav ul button {
+  display: inline-block;
+  border: 0.20em solid #0563bb;
+  border-radius: 2em;
+  box-sizing: border-box;
+  color: #0563bb;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.5em 2.0em;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.login-container button:hover {
+  background-color: #0563bb;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-2px);
+}
+
+.login-container button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
